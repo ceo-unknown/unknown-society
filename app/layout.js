@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
 import { Container } from "react-bootstrap";
+import TopNav from "./_components/TopNav/TopNav";
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +12,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`bg-black text-light`}>
-        <Container>{children}</Container>
+        <Container>
+          <TopNav />
+          {children}
+        </Container>
       </body>
     </html>
   );
