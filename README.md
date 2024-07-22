@@ -6,7 +6,7 @@
 
 ---
 
-> Frontend
+> Frontend 💅
 
 - [NextJS](www.nextjs.org)
 
@@ -26,12 +26,13 @@
 
 > ### Day - 01
 
-- 📅 **22/07/2024**
+- 📅 22/07/2024
 
 #### created UI components
 
-- TopNav bar
-- SideNav bar
+    - Top Nav bar
+    - Side Nav bar
+    - Bottom Nav bar for mobiles & tabs
 
 ---
 
