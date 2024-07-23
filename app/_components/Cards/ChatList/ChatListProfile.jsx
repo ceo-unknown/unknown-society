@@ -9,7 +9,7 @@ import styles from "./chatList.module.css";
 const ChatListProfile = ({ name, dp, msg, msgsLength }) => {
   return (
     <>
-      <Stack direction="horizontal" className={`justify-content-between my-2`}>
+      <Stack direction="horizontal" className={`justify-content-between `}>
         <CardImg
           src={
             dp

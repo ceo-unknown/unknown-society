@@ -1,6 +1,5 @@
 /* Chat List CSS */
 .chatCardContainer {
-  max-height: 80vh;
   overflow: scroll;
   overflow-x: hidden;
   scroll-behavior: smooth;

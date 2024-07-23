@@ -6,9 +6,9 @@ import ChatData from "./chatData";
 const ChatList = () => {
   return (
     <>
-      <Card className={`text-bg-dark`}>
+      <Card className={`text-bg-dark  h-100`}>
         <CardHeader>Chats </CardHeader>
-        <CardBody className={` ${styles.chatCardContainer} mb-3`}>
+        <CardBody className={` ${styles.chatCardContainer}`}>
           {ChatData.map((chat) => (
             <div key={chat._id}>
               <ChatListProfile
