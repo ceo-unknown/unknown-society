@@ -26,13 +26,21 @@
 
 > ### Day - 01
 
-- 📅 22/07/2024
+#### 📅 22/07/2024
 
 #### created UI components
 
-    - Top Nav bar
-    - Side Nav bar
-    - Bottom Nav bar for mobiles & tabs
+        - Top Nav bar
+        - Side Nav bar
+        - Bottom Nav bar for mobiles & tabs
+
+> ### Day - 02
+
+#### 📅 23/07/2024
+
+        - created folders
+        - chat component
+        - added responsive layout
 
 ---
 

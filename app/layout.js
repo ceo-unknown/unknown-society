@@ -1,8 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
 import { Container } from "react-bootstrap";
-import TopNav from "./_components/TopNav/TopNav";
-import BottomNav from "./_components/BottomNav/BottomNav";
+import TopNav from "./_components/Navbars/TopNav/TopNav";
+import BottomNav from "./_components/Navbars/BottomNav/BottomNav";
 
 export const metadata = {
   title: "UNKNOWN SOCIETY",

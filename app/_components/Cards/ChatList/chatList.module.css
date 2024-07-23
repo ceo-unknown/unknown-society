@@ -1,0 +1,35 @@
+/* Chat List CSS */
+.chatCardContainer {
+  max-height: 80vh;
+  overflow: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.chatCardContainer::-webkit-scrollbar {
+  width: 10px;
+}
+.chatCardContainer::-webkit-scrollbar-thumb {
+  background-color: rgb(128, 128, 128, 0.3);
+  border-radius: 10px;
+}
+.chatCardContainer::-webkit-scrollbar-track {
+  background-color: rgb(255, 255, 255, 0.1);
+}
+/* Chat List Profile CSS */
+.chatListUserDp {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.chatListUserName {
+  font-size: small;
+  font-weight: 200;
+}
+.chatListMsgNumber {
+  width: 10px;
+  height: 10px;
+  padding: 10px;
+  background: green;
+  border-radius: 50%;
+}
