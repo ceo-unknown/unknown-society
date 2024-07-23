@@ -4,8 +4,10 @@ import styles from "./bottomNav.module.css";
 const BottomNav = () => {
   return (
     <>
-      <Container className="d-lg-none fixed-bottom">
-        <Card className={`text-light rounded ${styles.bottomCardContainer}`}>
+      <Container className="d-lg-none fixed-bottom mb-2">
+        <Card
+          className={`text-light ${styles.bottomCardContainer} rounded-pill`}
+        >
           <CardBody>
             <Stack
               className={` justify-content-between align-items-center`}

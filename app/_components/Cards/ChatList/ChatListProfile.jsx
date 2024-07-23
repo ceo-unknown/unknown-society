@@ -19,8 +19,8 @@ const ChatListProfile = ({ name, dp, msg, msgsLength }) => {
           alt="chat_dp"
           className={` ${styles.chatListUserDp} me-2`}
         />
-        <Stack>
-          <CardSubtitle className={`${styles.chatListUserName}`}>
+        <Stack className="justify-content-center">
+          <CardSubtitle className={`${styles.chatListUserName} `}>
             {name}
           </CardSubtitle>
           <span className="small text-secondary">{msg}</span>
@@ -28,7 +28,7 @@ const ChatListProfile = ({ name, dp, msg, msgsLength }) => {
         <div
           className={`${styles.chatListMsgNumber} d-flex align-items-center justify-content-center`}
         >
-          <p className={`text-center mb-0`}>{msgsLength}</p>
+          <p className={`text-center mb-0 small`}>{msgsLength}</p>
         </div>
       </Stack>
       <hr className={`my-1 m`} />

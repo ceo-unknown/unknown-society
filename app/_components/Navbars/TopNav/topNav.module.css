@@ -1,17 +1,16 @@
 .navBg {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(207, 0, 248, 0.234);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 .navBrandUnknown {
-  font-size: 2em;
   font-weight: bold;
+  padding: 8px;
+  border-radius: 10px;
 }
 .navBrandSociety {
-  font-size: 2em;
   font-weight: bold;
   color: rgb(255, 255, 255);
 }

@@ -5,15 +5,15 @@ import ChatList from "./_components/Cards/ChatList/ChatList";
 
 export default function Home() {
   return (
-    <Container className={`${styles.mainContainer}`}>
+    <Container className={`${styles.mainContainer} `}>
       <Row>
-        <Col className={``} xs={0} lg={3}>
+        <Col className={`d-none d-lg-block`} xs={0} lg={3}>
           <SideNav />
         </Col>
-        <Col className="h-100" xs={12} lg={4}>
+        <Col className="px-0" xs={12} lg={4}>
           <ChatList />
         </Col>
-        <Col lg={5}></Col>
+        <Col className={`d-none d-lg-block`} xs={0} lg={5}></Col>
       </Row>
     </Container>
   );
