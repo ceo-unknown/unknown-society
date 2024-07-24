@@ -22,11 +22,12 @@ const ChatContainer = () => {
           </CardHeader>
           <CardBody className={`${styles.chatCardContainer}`}>
             <Container className="h-100 px-0">
-              {conversation.map((chat) =>
+              {conversation.map((chat, index) =>
                 chat.sender == "Friend" ? (
                   <>
                     {/* incoming messages */}
                     <Stack
+                      key={index}
                       direction="horizontal"
                       className="justify-content-start"
                     >

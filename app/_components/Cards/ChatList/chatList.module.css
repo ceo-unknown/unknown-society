@@ -5,7 +5,7 @@
   scroll-behavior: smooth;
 }
 .chatCardContainer::-webkit-scrollbar {
-  width: 10px;
+  width: 2px;
 }
 .chatCardContainer::-webkit-scrollbar-thumb {
   background-color: rgb(128, 128, 128, 0.3);
@@ -36,7 +36,7 @@
 
 @media only screen and (max-width: 600px) {
   .chatCardContainer {
-    height: 100vh;
+    height: 80vh;
     overflow: scroll;
     overflow-x: hidden;
     scroll-behavior: smooth;
