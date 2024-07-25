@@ -7,9 +7,9 @@ import Link from "next/link";
 const ChatList = () => {
   return (
     <>
-      <Card className={`text-bg-dark  h-100`}>
+      <Card className={`text-bg-dark  ${styles.chatCardContainer}`}>
         <CardHeader>Chats </CardHeader>
-        <CardBody className={` ${styles.chatCardContainer}`}>
+        <CardBody className={` `}>
           {ChatData.map((chat) => (
             <div key={chat._id}>
               <Link href={`/chats/${chat._id}`} className={`nav-link`}>

@@ -1,5 +1,6 @@
 /* Chat List CSS */
 .chatCardContainer {
+  height: auto;
   overflow: scroll;
   overflow-x: hidden;
   scroll-behavior: smooth;
@@ -36,7 +37,7 @@
 
 @media only screen and (max-width: 600px) {
   .chatCardContainer {
-    height: 80vh;
+    height: auto;
     overflow: scroll;
     overflow-x: hidden;
     scroll-behavior: smooth;

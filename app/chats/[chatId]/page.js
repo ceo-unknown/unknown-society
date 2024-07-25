@@ -1,6 +1,6 @@
 import ChatContainer from "@/app/_components/Cards/ChatContainer/ChatContainer";
 import ChatData from "@/app/_components/Cards/ChatList/chatData";
-import { CardText } from "react-bootstrap";
+import MobileNav from "@/app/_components/Navbars/MobileNav/MobileNav";
 
 export async function generateStaticParams() {
   const chatRoomId = ChatData.map((chat) => ({
@@ -14,6 +14,7 @@ export default function ChatBoxRoom({ params }) {
   const chat = ChatData.find((chatObj) => chatObj._id === id);
   return (
     <>
+      <MobileNav />
       <ChatContainer
         user_dp={chat.userDp}
         user_name={chat.userName}

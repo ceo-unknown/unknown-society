@@ -9,6 +9,8 @@ import {
 } from "react-bootstrap";
 import ChatContainerProfile from "./ChatContainerProfile";
 import styles from "./ChatContainer.module.css";
+import Link from "next/link";
+import { BsArrow90DegLeft, BsArrowBarLeft } from "react-icons/bs";
 const ChatContainer = ({ user_dp, user_name, msg }) => {
   return (
     <>
