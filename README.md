@@ -42,6 +42,12 @@
         - chat component
         - added responsive layout
 
+> ### Day - 03
+
+#### 📅 24/07/2024
+
+        - fixed UI
+
 ---
 
 ### ⚠️ not implemented any functionality
