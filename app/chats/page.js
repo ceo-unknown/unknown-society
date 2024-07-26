@@ -5,10 +5,14 @@ import {
   CardHeader,
   CardImg,
   CardSubtitle,
+  Row,
+  Col,
   Stack,
+  Container,
 } from "react-bootstrap";
 import ChatList from "../_components/Cards/ChatList/ChatList";
 import MobileNav from "../_components/Navbars/MobileNav/MobileNav";
+import ChatBoxRoom from "./[chatId]/page";
 
 const ChatProfile = () => {
   return (
@@ -45,27 +49,29 @@ const Chats = () => {
       <ChatList /> */}
 
       {/* new code */}
-
-      <Card
-        className="text-bg-dark "
-        style={{
-          width: 300,
-          height: "auto",
-        }}
-      >
-        <CardHeader>Chats</CardHeader>
-        <CardBody>
-          <Stack gap={2}>
-            <ChatProfile />
-            <ChatProfile />
-            <ChatProfile />
-            <ChatProfile />
-            <ChatProfile />
-            <ChatProfile />
-            <ChatProfile />
-          </Stack>
-        </CardBody>
-      </Card>
+      <Container className="h-100 my-2">
+        <Row>
+          <Col xs={12} md={4} lg={4}>
+            <Card className="text-bg-dark h-100">
+              <CardHeader>Chats</CardHeader>
+              <CardBody>
+                <Stack gap={2}>
+                  <ChatProfile />
+                  <ChatProfile />
+                  <ChatProfile />
+                  <ChatProfile />
+                  <ChatProfile />
+                  <ChatProfile />
+                  <ChatProfile />
+                </Stack>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col xs={12} md={8} lg={8}>
+            <ChatBoxRoom />
+          </Col>
+        </Row>
+      </Container>
     </>
   );
 };
