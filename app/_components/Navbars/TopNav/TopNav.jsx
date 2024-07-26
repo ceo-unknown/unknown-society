@@ -1,16 +1,35 @@
-import { Navbar } from "react-bootstrap";
+import { Container, Nav, Navbar, NavbarBrand } from "react-bootstrap";
 
 import styles from "./topNav.module.css";
-
-// import brandImg from "../../../public/assets/";
+import Link from "next/link";
+import { BsChat, BsHouse, BsPerson, BsSearch } from "react-icons/bs";
 
 const TopNav = () => {
   return (
     <>
       <Navbar
-        className={`${styles.navBg} mb-2 rounded-bottom sticky-top d-none d-lg-block`}
+        className="text-bg-primary
+        rounded bg-opacity-50 "
       >
-        <h4 className={`text-center mx-auto fw-bold`}>Unknown Society</h4>
+        <Container>
+          <NavbarBrand className="fw-bold text-light text-uppercase ">
+            Unknown Society
+          </NavbarBrand>
+          <Container className="d-flex justify-content-around">
+            <Link className="nav-link" href={"/"}>
+              <BsHouse color="white" size={24} />
+            </Link>
+            <Link className="nav-link" href={"/"}>
+              <BsSearch color="white" size={24} />
+            </Link>
+            <Link className="nav-link" href={"/"}>
+              <BsChat color="white" size={24} />
+            </Link>
+            <Link className="nav-link" href={"/"}>
+              <BsPerson color="white" size={24} />
+            </Link>
+          </Container>
+        </Container>
       </Navbar>
     </>
   );

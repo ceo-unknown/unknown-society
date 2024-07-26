@@ -16,11 +16,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${font.className} bg-black text-light px-0`}>
-        <Container className={`px-0`}>
+        <Container className={`px-0 main_container`}>
           <TopNav />
-          <SideNav />
+          {/* <SideNav /> */}
           {children}
-          <BottomNav />
+          {/* <BottomNav /> */}
         </Container>
       </body>
     </html>

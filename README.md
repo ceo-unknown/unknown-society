@@ -48,6 +48,12 @@
 
         - fixed UI
 
+> ### Day - 04
+
+#### 📅 24/07/2024
+
+        - refactoring total UI
+
 ---
 
 ### ⚠️ not implemented any functionality

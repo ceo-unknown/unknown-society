@@ -3,3 +3,6 @@
   margin: 0;
   box-sizing: border-box;
 }
+.main_container {
+  max-height: 70vh;
+}
