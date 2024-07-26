@@ -9,12 +9,12 @@ import {
 } from "react-bootstrap";
 import { BsSend } from "react-icons/bs";
 
-// export async function generateStaticParams() {
-//   const chatRoomId = ChatData.map((chat) => ({
-//     chatId: chat._id,
-//   }));
-//   return chatRoomId;
-// }
+export async function generateStaticParams() {
+  const chatRoomId = ChatData.map((chat) => ({
+    chatId: chat._id,
+  }));
+  return chatRoomId;
+}
 
 export default function ChatBoxRoom({ params }) {
   // const id = params.chatId;
