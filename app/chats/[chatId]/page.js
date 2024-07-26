@@ -17,8 +17,8 @@ export async function generateStaticParams() {
 }
 
 export default function ChatBoxRoom({ params }) {
-  // const id = params.chatId;
-  // const chat = ChatData.find((chatObj) => chatObj._id === id);
+  const id = params.chatId;
+  const chat = ChatData.find((chatObj) => chatObj._id === id);
   return (
     <>
       <Card className="text-bg-dark h-100 ">
