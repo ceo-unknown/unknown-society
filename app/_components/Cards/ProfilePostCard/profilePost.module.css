@@ -1,0 +1,15 @@
+.imgContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5em;
+  height: 90vh;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.imgContainer::-webkit-scrollbar {
+  width: 2px;
+  background-color: rgb(28, 27, 27);
+}
+.imgContainer::-webkit-scrollbar-thumb {
+  background-color: rgb(45, 44, 44);
+}

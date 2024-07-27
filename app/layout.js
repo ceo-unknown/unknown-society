@@ -4,7 +4,7 @@ import "./globals.css";
 import { Container } from "react-bootstrap";
 import TopNav from "./_components/Navbars/TopNav/TopNav";
 import BottomNav from "./_components/Navbars/BottomNav/BottomNav";
-import SideNav from "./_components/Navbars/SideNav/SideNav";
+import MobileNav from "./_components/Navbars/MobileNav/MobileNav";
 
 const font = Poppins({ subsets: ["latin"], weight: "300" });
 export const metadata = {
@@ -18,9 +18,9 @@ export default function RootLayout({ children }) {
       <body className={`${font.className} bg-black text-light px-0`}>
         <Container className={`px-0 main_container`}>
           <TopNav />
-          {/* <SideNav /> */}
+          <MobileNav />
           {children}
-          {/* <BottomNav /> */}
+          <BottomNav />
         </Container>
       </body>
     </html>

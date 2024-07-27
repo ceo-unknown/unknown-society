@@ -29,7 +29,9 @@
 #### created UI components
 
         - Top Nav bar
-        - Side Nav bar
+        - Profile
+        - Post card
+        - Search page
         - Bottom Nav bar for mobiles & tabs
 
 ### ⚠️ not implemented any functionality

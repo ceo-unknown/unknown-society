@@ -7,18 +7,13 @@ export default function Home() {
   return (
     <Container className={`px-0 my-2 ${styles.mainContainer}`}>
       <Row>
-        <Col xs={0} md={4} lg={4} className="d-sm-none d-md-block d-lg-block ">
+        <Col xs={0} md={4} lg={4} className="d-none d-md-block d-lg-block ">
           <ProfileCard />
         </Col>
-        <Col
-          xs={12}
-          md={8}
-          lg={4}
-          className="border border-top-0 border-bottom-0 border-secondary"
-        >
+        <Col xs={12} md={8} lg={4} className="px-0">
           <PostCard />
         </Col>
-        <Col xs={0} lg={4}>
+        <Col xs={0} lg={4} className="d-none d-md-block">
           <TrendsCard />
         </Col>
       </Row>

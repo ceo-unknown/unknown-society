@@ -6,7 +6,7 @@ import ProfileFooter from "./ProfileFooter";
 const ProfileCard = () => {
   return (
     <>
-      <Card className="text-bg-primary bg-opacity-50 border border-secondary sticky-top">
+      <Card className="text-bg-primary bg-opacity-50 border border-secondary sticky-top my-2">
         <CardBody>
           <ProfileHeader />
         </CardBody>

@@ -1,5 +1,5 @@
 import { Card, CardBody, Container, Stack } from "react-bootstrap";
-import { BsChatLeft, BsHouseDoor, BsPerson } from "react-icons/bs";
+import { BsChatLeft, BsHouseDoor, BsPerson, BsSearch } from "react-icons/bs";
 import styles from "./bottomNav.module.css";
 import Link from "next/link";
 const BottomNav = () => {
@@ -20,12 +20,12 @@ const BottomNav = () => {
                 </Link>
               </div>
               <div>
-                <Link href={"/chats"} className="nav-link">
-                  <BsChatLeft size={25} />
+                <Link href={"/explore"} className="nav-link">
+                  <BsSearch size={25} />
                 </Link>
               </div>
               <div>
-                <Link href={"/chats"} className="nav-link">
+                <Link href={"/profile"} className="nav-link">
                   <BsPerson size={25} />
                 </Link>
               </div>

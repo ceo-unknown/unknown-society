@@ -9,7 +9,7 @@ const TopNav = () => {
     <>
       <Navbar
         className="text-bg-primary
-        rounded bg-opacity-50 "
+        rounded bg-opacity-50 d-none d-lg-block"
       >
         <Container>
           <NavbarBrand className="fw-bold text-light text-uppercase ">
