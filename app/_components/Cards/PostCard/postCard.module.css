@@ -2,13 +2,13 @@
   width: 3em;
   height: 3em;
 }
-/* .PostCardContainer {
-  max-width: 20em;
-  max-height: 20em;
-  aspect-ratio: 1/1;
-} */
-@media screen and (max-width: 680px) {
-  .PostCardContainer {
+.postCardContainer {
+  aspect-ratio: 4 / 3;
+  height: auto;
+}
+@media screen and (max-width: 790px) {
+  .postCardContainer {
     width: 100%;
+    height: auto;
   }
 }

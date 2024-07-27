@@ -1,4 +1,3 @@
-import React from "react";
 import PostCardHeader from "./PostCardHeader";
 import { Card, CardBody, CardFooter } from "react-bootstrap";
 import PostCardFooter from "./PostCardFooter";
@@ -11,10 +10,10 @@ const PostCard = () => {
   return (
     <>
       <Card
-        className={`text-bg-secondary bg-opacity-50 ${styles.PostCardContainer}`}
+        className={`text-bg-secondary bg-opacity-50 ${styles.postCardContainer} mx-auto d-block px-0`}
       >
         <PostCardHeader />
-        <CardBody>
+        <CardBody className="px-0">
           <PostCardImage />
         </CardBody>
         <CardFooter>
