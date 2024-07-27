@@ -22,9 +22,9 @@ const TopNav = () => {
             <Link className="nav-link" href={"/"}>
               <BsSearch color="white" size={24} />
             </Link>
-            <Link className="nav-link" href={"/"}>
+            {/* <Link className="nav-link" href={"/"}>
               <BsChat color="white" size={24} />
-            </Link>
+            </Link> */}
             <Link className="nav-link" href={"/"}>
               <BsPerson color="white" size={24} />
             </Link>
