@@ -1,26 +1,28 @@
 import React from "react";
 import { Stack } from "react-bootstrap";
-import { BsChatLeft, BsHeart, BsShare, BsThreeDots } from "react-icons/bs";
+import {
+  BsGraphUp,
+  BsGrid1X2,
+  BsPlusCircle,
+  BsPostageFill,
+} from "react-icons/bs";
 
-const PostCardFooter = () => {
+const ProfileFooter = () => {
   return (
     <>
       <Stack direction="horizontal" gap={2} className="justify-content-between">
         <div>
-          <BsHeart />
+          <BsGrid1X2 />
         </div>
         <div>
-          <BsChatLeft />
+          <BsPlusCircle />
         </div>
         <div>
-          <BsShare />
-        </div>
-        <div>
-          <BsThreeDots />
+          <BsGraphUp />
         </div>
       </Stack>
     </>
   );
 };
 
-export default PostCardFooter;
+export default ProfileFooter;
