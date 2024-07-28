@@ -10,7 +10,7 @@ const PostCard = () => {
   return (
     <>
       <Card
-        className={`text-bg-secondary bg-opacity-50 ${styles.postCardContainer} mx-auto d-block px-0`}
+        className={`text-bg-secondary bg-opacity-50 ${styles.postCardContainer} mx-auto d-block my-2`}
       >
         <PostCardHeader />
         <CardBody className="px-0">

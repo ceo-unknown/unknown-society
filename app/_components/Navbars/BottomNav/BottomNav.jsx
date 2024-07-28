@@ -1,13 +1,21 @@
 import { Card, CardBody, Container, Stack } from "react-bootstrap";
-import { BsChatLeft, BsHouseDoor, BsPerson, BsSearch } from "react-icons/bs";
+import {
+  BsChatLeft,
+  BsHouseDoor,
+  BsPerson,
+  BsPlusCircle,
+  BsSearch,
+} from "react-icons/bs";
 import styles from "./bottomNav.module.css";
 import Link from "next/link";
+import { myTheme } from "../../Themes/myTheme";
 const BottomNav = () => {
   return (
     <>
       <Container className="d-lg-none fixed-bottom mb-2">
         <Card
-          className={`text-light ${styles.bottomCardContainer} rounded-pill`}
+          className={`text-light  rounded-pill`}
+          style={{ background: myTheme.rgbaPrimary }}
         >
           <CardBody>
             <Stack
@@ -15,13 +23,18 @@ const BottomNav = () => {
               direction="horizontal"
             >
               <div>
-                <Link href={"/chats"} className="nav-link">
+                <Link href={"/"} className="nav-link">
                   <BsHouseDoor size={25} />
                 </Link>
               </div>
               <div>
                 <Link href={"/explore"} className="nav-link">
                   <BsSearch size={25} />
+                </Link>
+              </div>
+              <div>
+                <Link href={"/post"} className="nav-link">
+                  <BsPlusCircle size={25} />
                 </Link>
               </div>
               <div>

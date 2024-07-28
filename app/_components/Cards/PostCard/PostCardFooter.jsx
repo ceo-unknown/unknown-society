@@ -5,18 +5,22 @@ import { BsChatLeft, BsHeart, BsShare, BsThreeDots } from "react-icons/bs";
 const PostCardFooter = () => {
   return (
     <>
-      <Stack direction="horizontal" gap={2} className="justify-content-between">
+      <Stack
+        direction="horizontal"
+        gap={2}
+        className="justify-content-between px-2"
+      >
         <div>
-          <BsHeart />
+          <BsHeart size={24} />
         </div>
         <div>
-          <BsChatLeft />
+          <BsChatLeft size={24} />
         </div>
         <div>
-          <BsShare />
+          <BsShare size={24} />
         </div>
         <div>
-          <BsThreeDots />
+          <BsThreeDots size={24} />
         </div>
       </Stack>
     </>

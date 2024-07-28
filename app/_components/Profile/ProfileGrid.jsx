@@ -8,10 +8,10 @@ const ProfileGrid = () => {
     <>
       <Container className={`px-0`}>
         <Row>
-          <Col xs={12} md={5} lg={5}>
+          <Col xs={12} md={4} lg={5}>
             <ProfileCard />
           </Col>
-          <Col xs={12} md={7} lg={7} className="px-0">
+          <Col xs={12} md={8} lg={7} className="px-0">
             {/* all posts */}
             <ProfilePostGrid />
           </Col>
