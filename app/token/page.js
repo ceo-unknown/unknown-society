@@ -4,12 +4,34 @@ import {
   Card,
   CardBody,
   Container,
+  Form,
+  FormControl,
+  FormLabel,
+  FormSelect,
   Image,
   Stack,
 } from "react-bootstrap";
+import { BsClock, BsEye, BsPerson } from "react-icons/bs";
+
+import tokenIcon from "../../public/token-icon-1.png";
+
+import { myTheme } from "../_components/Themes/myTheme";
+import { useState } from "react";
 
 const page = () => {
-  const createToken = () => {};
+  const [formData, setFormData] = useState({
+    user_id: "",
+    password: "",
+    tte: "",
+  });
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(formData);
+  };
+  // const createToken = () => {};
 
   return (
     <>
@@ -17,19 +39,64 @@ const page = () => {
         className={`d-flex  justify-content-center align-items-center`}
         style={{ height: "90vh" }}
       >
-        <Card className="my-3 w-full text-bg-dark">
+        <Card className="my-3 text-bg-dark">
           <CardBody>
             <Stack gap={2} direction="vertical">
               <Image
-                src="https://img.freepik.com/free-vector/hand-drawn-cardano-illustration_23-2149213702.jpg?w=996&t=st=1722183633~exp=1722184233~hmac=f25aa5728c8ef058faef0baa3bb0cae4aa9823f8e46ddfbdd3a3ea1965ab9d4c"
+                src={tokenIcon}
                 style={{
-                  width: 100,
-                  height: 100,
                   objectFit: "cover",
                 }}
-                className="rounded mx-auto my-3"
+                className="rounded mx-auto my-3 border-0"
               />
-              <Button onClick={createToken}>Take a Token</Button>
+              <Form onSubmit={handleSubmit}>
+                <div className="mb-3">
+                  <FormLabel>
+                    <BsPerson size={21} />
+                    user_id
+                  </FormLabel>
+                  <FormControl
+                    placeholder="user_id"
+                    name="user_id"
+                    onChange={handleChange}
+                  />
+                </div>
+
+                <div className="mb-3">
+                  <FormLabel>
+                    <BsEye size={21} /> password
+                  </FormLabel>
+                  <FormControl
+                    placeholder="enter password"
+                    name="password"
+                    onChange={handleChange}
+                  />
+                </div>
+                <div className="mb-3">
+                  <FormLabel>
+                    <BsClock size={21} /> token expire
+                  </FormLabel>
+                  <FormSelect
+                    aria-label="Default select example"
+                    onChange={handleChange}
+                    name="tte"
+                  >
+                    <option>time to token expire</option>
+                    <option value="1">6hrs</option>
+                    <option value="2">12hrs</option>
+                    <option value="3">24hrs</option>
+                  </FormSelect>
+                </div>
+                <Button
+                  type="submit"
+                  size="lg"
+                  // onClick={createToken}
+                  style={{ background: myTheme.rgbaPrimary }}
+                  className="border-0"
+                >
+                  Take a Token
+                </Button>
+              </Form>
             </Stack>
           </CardBody>
         </Card>
