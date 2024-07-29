@@ -17,19 +17,27 @@ import tokenIcon from "../../public/token-icon-1.png";
 
 import { myTheme } from "../_components/Themes/myTheme";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const page = () => {
+  const router = useRouter();
   const [formData, setFormData] = useState({
     user_id: "",
     password: "",
     tte: "",
   });
+  const [isLoading, setLoading] = useState(false);
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
   const handleSubmit = (e) => {
     e.preventDefault();
+    setLoading(true);
     console.log(formData);
+    if (formData.user_id.length && formData.password.length == 0) {
+      alert("enter all  felids");
+    }
+    router.push("/");
   };
   // const createToken = () => {};
 
@@ -90,11 +98,13 @@ const page = () => {
                 <Button
                   type="submit"
                   size="lg"
+                  disabled={isLoading}
                   // onClick={createToken}
                   style={{ background: myTheme.rgbaPrimary }}
                   className="border-0"
                 >
-                  Take a Token
+                  {isLoading && <>Generating Token</>}
+                  {!isLoading && <>Take a Token</>}
                 </Button>
               </Form>
             </Stack>
