@@ -13,8 +13,6 @@ import {
 } from "react-bootstrap";
 import { BsClock, BsEye, BsPerson } from "react-icons/bs";
 
-import tokenIcon from "../../public/token-icon-1.png";
-
 import { myTheme } from "../_components/Themes/myTheme";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
@@ -34,26 +32,35 @@ const page = () => {
     e.preventDefault();
     setLoading(true);
     console.log(formData);
-    if (formData.user_id.length && formData.password.length == 0) {
+    if (formData.user_id.length === 0) {
+      // && formData.password.length
       alert("enter all  felids");
+      setLoading(false);
     }
-    router.push("/");
+    if (formData.password.length === 0) {
+      alert("enter all  felids");
+      setLoading(false);
+    }
+    if (formData.user_id && formData.password) {
+      router.push("/");
+    }
   };
   // const createToken = () => {};
-
+  console.log("route ", router.pathname);
   return (
     <>
       <Container
         className={`d-flex  justify-content-center align-items-center`}
         style={{ height: "90vh" }}
       >
-        <Card className="my-3 text-bg-dark">
+        <Card className="my-3 border border-secondary text-bg-secondary bg-opacity-25">
           <CardBody>
             <Stack gap={2} direction="vertical">
               <Image
-                src={tokenIcon}
+                src="https://github.com/ceo-unknown/unknown-society/blob/main/public/token-icon-1.png?raw=true"
                 style={{
                   objectFit: "cover",
+                  width: "50%",
                 }}
                 className="rounded mx-auto my-3 border-0"
               />
@@ -66,6 +73,7 @@ const page = () => {
                   <FormControl
                     placeholder="user_id"
                     name="user_id"
+                    className="text-bg-dark"
                     onChange={handleChange}
                   />
                 </div>
@@ -104,7 +112,7 @@ const page = () => {
                   className="border-0"
                 >
                   {isLoading && <>Generating Token</>}
-                  {!isLoading && <>Take a Token</>}
+                  {!isLoading && <>Get Token</>}
                 </Button>
               </Form>
             </Stack>
