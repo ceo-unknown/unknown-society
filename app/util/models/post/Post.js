@@ -5,7 +5,7 @@ const postModelSchema = new mongoose.Schema(
     title: {
       type: String,
     },
-    desorption: {
+    desc: {
       type: String,
     },
     tags: [{ type: String }],
@@ -13,11 +13,11 @@ const postModelSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    author: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "User",
-      required: true,
-    },
+    // author: {
+    //   type: mongoose.Schema.Types.ObjectId,
+    //   ref: "User",
+    //   required: true,
+    // },
     date: {
       type: Date,
       default: Date.now,
