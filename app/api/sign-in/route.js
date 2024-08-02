@@ -38,17 +38,26 @@ export async function POST(request) {
 
   try {
     //   creating user in db
-
+    // check the user is already exits db
+    const fondUser = await User.findOne({ user_id: userTrim });
+    if (fondUser) {
+      return NextResponse.json({ error: "User already Exits" });
+    }
     const createdUser = await User.create({
       user_id: userTrim,
       password: passwordTrim,
     });
-    return NextResponse.json({ createdUser });
+
+    return NextResponse.json({
+      message: "user created successfully",
+      createdUser,
+    });
+
     //   return NextResponse.redirect(new URL("/login", request.url));
   } catch (error) {
     return NextResponse.json(
       {
-        error: "user already exits",
+        error: `there was something wrong while creating user ${error.message}user already exits`,
       },
       { status: 403 }
     );

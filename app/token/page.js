@@ -14,9 +14,6 @@ import {
 import { BsClock, BsEye, BsPerson } from "react-icons/bs";
 
 import { myTheme } from "../_components/Themes/myTheme";
-import { useState } from "react";
-import { useRouter } from "next/navigation";
-
 const page = () => {
   const router = useRouter();
   const [formData, setFormData] = useState({
@@ -45,8 +42,6 @@ const page = () => {
       router.push("/");
     }
   };
-  // const createToken = () => {};
-  console.log("route ", router.pathname);
   return (
     <>
       <Container

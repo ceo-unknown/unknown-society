@@ -4,8 +4,8 @@ import { NextResponse } from "next/server";
 
 //  getting all users
 export async function GET() {
-  connectDb();
+  await connectDb();
   const users = await User.find();
 
-  return NextResponse.json({ userCount: users.length, users });
+  return Response.json(users);
 }
