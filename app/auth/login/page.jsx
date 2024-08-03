@@ -12,7 +12,7 @@ import {
 } from "react-bootstrap";
 
 import styles from "../authStyle.module.css";
-import SignIn from "../sign-in/page";
+import SignIn from "../sign-up/page";
 const Login = () => {
   return (
     <>

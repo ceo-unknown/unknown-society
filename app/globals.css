@@ -6,3 +6,6 @@
 .main_container {
   max-height: 70vh;
 }
+.vh-90 {
+  height: 90svh;
+}
